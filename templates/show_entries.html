@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block body %}
+  {% for ticket in ticket_list %}
+    <div class="{{ ticket.satisfaction_rating.score }} ticket">
+      <a href="https://pagerduty.zendesk.com/agent/#/tickets/{{ ticket.id }}">{{ ticket.id }}</a>
+      {% if ticket.satisfaction_rating.comment %}
+          <em>"{{ticket.satisfaction_rating.comment}}"</em>
+      {% endif %}
+    </div>
+  {% else %}
+    <li><em>Unbelievable.  No tickets!</em>
+  {% endfor %}
+{% endblock %}

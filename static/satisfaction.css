@@ -1,0 +1,21 @@
+a:link {color:white;text-decoration: none}
+a:visited {color:white;text-decoration: none}
+a:active {color:#F7F8E0;text-decoration: none}
+a:hover {color:#F3F781;text-decoration: none}
+div.ticket {
+  float: left;
+  position:relative;
+  padding: 2em 2em;
+  margin: 1em;
+  text-align: center;
+  color: white;
+  opacity: 1;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  border-radius: 15px;
+}
+div.good {
+  background-color: #73b100;
+}
+div.bad {
+  background-color: #BDBDBD;
+}
